@@ -25,11 +25,11 @@ function draw() {
 	fill("red")
    text('IAD', mouseX - width/2, mouseY - width/2)
 	fill("orange")
-	text('on', mouseX-width/2, mouseY-width/2+100)
+	text('on', mouseX-width/2, mouseY-width/2+200)
 	fill("yellow")
-	text('top', mouseX-width/2, mouseY-width/2+200)
+	text('top', mouseX-width/2, mouseY-width/2+400)
 	fill("green")
-	text('!!!', mouseX-width/2, mouseY-width/2+300)
+	text('!!!', mouseX-width/2, mouseY-width/2+600)
 }
 
 //text too far away; fixed it with width, height / 2
