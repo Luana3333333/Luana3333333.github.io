@@ -14,9 +14,9 @@ function setup() {
 function draw() {
   background(0);
 	translate(0, 0, -500)
-	//text was cut off by background, hence -/+500
-	image(bg, -width, -height, width*2, height*2)
-	//same problem with image: set it -width
+	//text was cut off by background, hence -/+500 (set into background)
+	image(bg, -width-25, -height-20, width*2, height*2)
+	//same problem with image not being in point 0: set it -width
 	translate(0, 0, 500);
 	
   rotateX(frameCount/150);
@@ -32,4 +32,4 @@ function draw() {
 	text('!!!', mouseX-width/2, mouseY-width/2+600)
 }
 
-//text too far away; fixed it with width, height / 2
+//text not on mouse; fixed it with width, height / 2
